@@ -4,7 +4,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: black;
+  /* background-color: black;  */
   color: white;
 }
 
@@ -20,16 +20,16 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 600px; 
+  max-width: 600px;
   padding: 20px;
 }
 
-input[type='text'] {
-  flex: 1; 
+input[type="text"] {
+  flex: 1;
   padding: 15px;
   margin: 5px 0;
   border-radius: 7px;
-  background-color: bisque;
+  background-color: #f0f0f0;
   color: black;
   border: none;
   min-width: 400px;
@@ -43,7 +43,7 @@ button {
   background-color: blueviolet;
   border: none;
   cursor: pointer;
-  min-width: 80px; 
+  min-width: 80px;
 }
 
 button:hover {
@@ -51,14 +51,14 @@ button:hover {
 }
 .task {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   background-color: #f0f0f0;
   color: black;
   padding: 15px;
   margin-top: 10px;
   border-radius: 5px;
-  width: 100%; 
+  width: 100%;
 }
 
 .task .checkbox {
@@ -69,18 +69,18 @@ button:hover {
 .task .icon {
   cursor: pointer;
   font-size: 20px;
-  color: blueviolet; 
-  margin-left: 10px; 
+  color: blueviolet;
+  margin-left: 10px;
 }
 
 .task p {
-  margin-left: 10px; 
+  margin-left: 10px;
 }
 
-.through{
+.through {
   text-decoration: line-through;
 }
-.normal{
+.normal {
   text-decoration: none;
 }
 
@@ -93,16 +93,20 @@ button:hover {
 
   button {
     margin-top: 10px;
-    background-color: blueviolet; 
+    background-color: blueviolet;
     height: 30px;
     min-width: 350px;
     padding: 10px;
     text-align: center;
   }
 
-  .task{
+  .task {
     align-items: stretch;
-
   }
 }
 
+header {
+  width: 100%;
+  color: black;
+  background-color: transparent;
+}

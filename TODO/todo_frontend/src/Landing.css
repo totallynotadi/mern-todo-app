@@ -1,0 +1,114 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Header */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+ul li {
+  margin-left: 20px;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Main Content Section */
+.main-content {
+  height: calc(100vh - 160px); /* Adjusts height to ensure no scrolling */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.main-content .content {
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #0056b3;
+}
+
+/* Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.feature-item {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.Landing {
+  width: 100%;
+}
