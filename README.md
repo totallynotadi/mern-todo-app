@@ -11,12 +11,6 @@ Before running the application, ensure you have the following installed:
 
 ## Setup Instructions
 
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/AtharvaKulkarniIT/mern-todo-app.git
-```
-
 ### 2. Install dependencies
 
 ```bash
@@ -67,9 +61,5 @@ The server will run on `http://localhost:5000` and the client on `http://localho
 
 Feel free to contribute to this project by submitting pull requests.
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## Output
-![MERN TODO List App](https://drive.google.com/uc?id=135HfGq09XYieu-1sG9pQeQ41Sx1ytZ1m)
+![MERN TODO List App](demo-screenshot.png)
