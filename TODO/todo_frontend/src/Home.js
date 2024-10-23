@@ -6,11 +6,9 @@ import { BsCircleFill, BsFillCheckCircleFill, BsFillTrashFill, BsPencil } from '
 
 const Home = () => {
     const [task, setTask] = useState('');
-
     const [todos, setTodos] = useState([]);
     const [updatetask, setUpdatetask] = useState('');
     const [taskid, setTaskid] = useState('');
-    const [showedAlert, setShowedAlert] = useState(false);
 
     const createTask = () => {
         axios.post('http://localhost:5000/add', { task: task.trim() })
@@ -25,15 +23,6 @@ const Home = () => {
             })
             .catch(err => console.log(err));
     };
-
-    useEffect(() => {
-        setTimeout(() => {
-            if (!showedAlert) {
-                // alert('You are now logged in!');
-                setShowedAlert(true);
-            }
-        }, 500);
-    }, [])
 
     useEffect(() => {
         axios.get('http://localhost:5000/get')
@@ -71,7 +60,6 @@ const Home = () => {
                 setTaskid('');
                 setUpdatetask('');
                 // alert('Todo Updated!');
-                Window.location.reload();
             })
             .catch(err => console.log(err));
     };

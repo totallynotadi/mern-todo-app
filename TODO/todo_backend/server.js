@@ -17,7 +17,7 @@ app.listen(5000,
 
 app.post('/add', (req, res) => {
   const { task } = req.body;
-  TodoModel.create({ task })
+  TodoModel.create({ task })  
       .then(result => res.json(result))
       .catch(err => console.log(err));
    
